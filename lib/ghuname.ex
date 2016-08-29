@@ -1,0 +1,2 @@
+defmodule Ghuname do
+end
