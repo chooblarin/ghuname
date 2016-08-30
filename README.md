@@ -1,24 +1,21 @@
 # Ghuname
 
-**TODO: Add description**
+This comes from [sindresorhus/github-username](https://github.com/sindresorhus/github-username)
 
-## Installation
+> Get a GitHub username from an email address
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+*Only works for users that have their email publicly listed on their profile.*
 
-  1. Add `ghuname` to your list of dependencies in `mix.exs`:
+## Usage
 
-    ```elixir
-    def deps do
-      [{:ghuname, "~> 0.1.0"}]
-    end
-    ```
+```
+$ ./ghuname choo.bla.rin@gmail.com
 
-  2. Ensure `ghuname` is started before your application:
+username: @chooblarin
+```
 
-    ```elixir
-    def application do
-      [applications: [:ghuname]]
-    end
-    ```
+## Build
 
+```
+$ mix escript.build
+```
