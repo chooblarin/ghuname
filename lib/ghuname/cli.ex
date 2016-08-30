@@ -4,7 +4,7 @@ defmodule Ghuname.CLI do
     argv
     |> parse_args
     |> process
-    |> &(IO.puts(&1))
+    |> print
   end
 
   def parse_args(argv) do
@@ -39,5 +39,9 @@ defmodule Ghuname.CLI do
     {_, message} = List.keyfind(error, "message", 0)
     IO.puts "Error fetching from Github: #{message}"
     System.halt(2)
+  end
+
+  def print(username) do
+    IO.puts "username: @#{username}"
   end
 end
